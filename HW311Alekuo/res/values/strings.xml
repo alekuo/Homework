@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HW311</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="no_articles">No Articles</string>
+    <string name="article_icon">Article Icon</string>
+    <string name="refreshing">Refreshing&#8230;</string>
+    
+</resources>
