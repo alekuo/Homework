@@ -121,7 +121,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         {           
             //Close the xml file
         	xmlParser.close();
-         	db.close(); 
+//         	db.close();
         }
        
 	}

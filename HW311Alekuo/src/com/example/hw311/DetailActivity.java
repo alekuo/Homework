@@ -66,7 +66,8 @@ public class DetailActivity extends Activity {
 	    			Drawable drawImage = getResources().getDrawable(this.getResources().getIdentifier(icon, "drawable", this.getPackageName()));
 	
 	    			if (drawImage != null ) {
-	    				aIcon.setBackground(drawImage);
+//	    				aIcon.setBackground(drawImage);
+                        aIcon.setBackgroundDrawable(drawImage);
 	    				LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 	    				layoutParams.gravity = Gravity.CENTER;
 	    				aIcon.setLayoutParams(layoutParams);
