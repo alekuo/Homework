@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dip" >
+    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="10dip" >
+	    <ImageView
+	        android:id="@+id/detail_imgIcon"
+	        android:layout_width="130dp"
+	        android:layout_height="86dp"
+	        android:scaleType="fitXY"
+	        android:minWidth="65dp"
+	        android:minHeight="43dp"
+	        android:layout_margin="10dip"
+	        android:contentDescription="@string/article_icon"
+	        android:background="@drawable/article" />
+	
+	
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:padding="2dip" >
+	
+	    	<TextView
+		        android:id="@+id/detail_txtTitle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dip"
+		        android:text="@string/title"
+		        android:textSize="20sp"
+		        android:textStyle="bold" />
+	
+	        <TextView
+	            android:id="@+id/detail_txtDate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:text="@string/date"
+	            android:textSize="10sp"
+	            android:gravity="right"
+	            android:layout_gravity="right"
+	            android:textStyle="italic" />
+	
+	
+		</LinearLayout>
+		
+	</LinearLayout>
+				
+    <ScrollView 
+        android:id="@+id/detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:scrollbars="vertical" 
+        android:focusable="false"
+        android:focusableInTouchMode="true" >
+        
+        <WebView
+            android:id="@+id/detail_txtContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="@string/content"  />
+    </ScrollView>
+
+</LinearLayout>
