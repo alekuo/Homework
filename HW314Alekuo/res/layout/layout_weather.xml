@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout" 
+    android:layout_height="match_parent"         
+    android:layout_width="match_parent"     
+    android:layout_marginTop="5dip"     
+    android:fillViewport="true"> 
+
+	<LinearLayout
+		android:id="@+id/backWeather"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >	    		
+		 
+	    <TableLayout
+			android:id="@+id/nowWeather"
+			android:baselineAligned="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/title"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/my_white"
+				android:textSize="24pt"
+				android:gravity="center"  />
+			<TextView
+				android:id="@+id/countryTitle"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/my_white"
+				android:textSize="12pt"
+				android:gravity="center"  />
+			
+			<TableRow>
+				<TextView
+					android:id="@+id/weatherTemp"
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:textColor="@color/my_white"
+					android:textSize="30pt"
+					android:gravity="center"
+					android:layout_weight=".5"  />
+				<ImageView 
+					android:id="@+id/weather_pic"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight=".5"
+					android:contentDescription="@string/weather_image" />
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:id="@+id/otherWeather"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:textColor="@color/my_white"
+					android:textSize="10pt"
+					android:layout_weight=".5"  />
+				<TextView
+					android:id="@+id/weatherCond"
+					android:layout_width="0dp"
+					android:layout_height="fill_parent"
+					android:gravity="center"
+					android:textSize="14pt"
+					android:layout_weight=".5"  />
+			</TableRow>
+			<TableRow>
+				<TextView
+					android:id="@+id/spacer"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_weight="1" />
+			</TableRow>		           			           			           
+				        	        
+	    </TableLayout>
+		
+	    <TableLayout
+			android:id="@+id/dailyForecasts"
+			android:baselineAligned="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+		</TableLayout>	
+	
+	</LinearLayout>
+</ScrollView>
+
+

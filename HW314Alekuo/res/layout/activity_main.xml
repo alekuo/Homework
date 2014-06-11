@@ -1,0 +1,33 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="@string/instructions"
+        android:gravity="center"
+        tools:context=".LookupActivity" />
+    <EditText
+        android:id="@+id/place"
+        android:layout_width="fill_parent"
+        android:inputType="text"
+        android:background="@color/my_white"
+        android:textColorHighlight="@color/my_blue"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/my_white"
+        android:text="@string/get_weather" />
+    <ListView
+        android:id="@+id/woeidlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
